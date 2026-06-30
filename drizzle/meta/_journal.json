@@ -29,6 +29,13 @@
       "when": 1782798462868,
       "tag": "0003_yielding_namor",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1782811384051,
+      "tag": "0004_wild_nicolaos",
+      "breakpoints": true
     }
   ]
 }
