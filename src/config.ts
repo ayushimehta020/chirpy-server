@@ -4,6 +4,7 @@ process.loadEnvFile();
 
 export type AuthConfig = {
   jwtSecret: string;
+  polkaKey: string;
 };
 
 export type APIConfig = {
@@ -35,6 +36,7 @@ export const config: Config = {
   },
   auth: {
     jwtSecret: envOrThrow("JWT_SECRET"),
+    polkaKey: envOrThrow("POLKA_KEY"),
   },
 };
 
