@@ -12,7 +12,15 @@ export async function createChirp(chirp: NewChirp) {
   return result;
 }
 
-export async function getAllChirps() {
+export async function getAllChirps(authorId?: string) {
+  if (authorId) {
+    return await db
+      .select()
+      .from(chirps)
+      .where(eq(chirps.userId, authorId))
+      .orderBy(chirps.createdAt);
+  }
+
   return db.select().from(chirps).orderBy(chirps.createdAt);
 }
 
