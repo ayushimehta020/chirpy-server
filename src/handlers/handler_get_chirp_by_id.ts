@@ -2,7 +2,7 @@ import { Request, Response } from "express";
 import { getChirpById } from "../db/queries/chirps.js";
 import { NotFoundError } from "../error_classes.js";
 
-type ChirpParams = {
+export type ChirpParams = {
   chirpId: string;
 };
 
